@@ -1,0 +1,1 @@
+QoL improvements for KakaoPage
