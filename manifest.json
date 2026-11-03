@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Kakaopage Enhanced",
+  "version": "1.00",
+  "description": "QoL improvements for KakaoPage",
+  "author": "Minjae Kim",
+  "icons": {
+    "16": "images/Kakao_page_logo.png",
+    "32": "images/Kakao_page_logo.png",
+    "48": "images/Kakao_page_logo.png",
+    "128": "images/Kakao_page_logo.png"
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_icon": {            
+      "16": "images/Kakao_page_logo.png",
+      "24": "images/Kakao_page_logo.png",
+      "32": "images/Kakao_page_logo.png"  
+    },
+    "default_title": "Settings",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://page.kakao.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

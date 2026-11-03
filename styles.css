@@ -1,0 +1,18 @@
+/* Ad & Promo Hiding (Enabled only when body has .ext-hide-ads) */
+body.ext-hide-ads .relative.mt-4pxr.min-h-280pxr.bg-theme-bg-surface-alt.pt-16pxr,
+body.ext-hide-ads .flex.justify-center.overflow-hidden.bg-transparent.mx-11pxr.mt-16pxr.min-h-160pxr,
+body.ext-hide-ads .flex.w-full.justify-center.overflow-hidden.rounded-8pxr.bg-static-etc-bg-da,
+body.ext-hide-ads .bg-theme-bg-surface-alt.pb-16pxr, 
+body.ext-hide-ads .flex.justify-center.overflow-hidden.rounded-8pxr.bg-static-etc-bg-da.mx-11pxr.mb-5pxr,
+body.ext-hide-ads div.relative.z-10 > .mx-11pxr,
+body.ext-hide-ads .mb-56pxr.min-h-270pxr.border-t-\[3px\].border-solid.border-theme-bg-base-alt.bg-theme-bg-surface {
+    display: none !important;
+}
+
+/* Dynamic Highlighting */
+.userscript-highlight {
+    border: 2px solid #ff4757 !important;
+    background-color: rgba(255, 71, 87, 0.2) !important;
+    border-radius: 8px !important;
+    padding: 4px !important;
+}

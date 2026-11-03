@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    :root{
+      --primary-color: #fee500;/*#ff4757(red),#fee500(yellow)*/
+    }
+    body {
+      width: 230px;
+      padding: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+    h3 {
+      margin: 0 0 12px 0;
+      font-size: 14px;
+      color: var(--primary-color);
+    }
+    .toggle-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .toggle-group label {
+      font-size: 12px;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 34px;
+      height: 20px;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #444;
+      transition: .2s;
+      border-radius: 20px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 14px;
+      width: 14px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .2s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: var(--primary-color);
+    }
+    input:checked + .slider:before {
+      transform: translateX(14px);
+    }
+  </style>
+</head>
+<body>
+  <h3>Kakaopage Enhanced</h3>
+  
+  <div class="toggle-group">
+    <label for="hideAds">Hide Ads & Promos</label>
+    <label class="switch">
+      <input type="checkbox" id="hideAds" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="toggle-group">
+    <label for="injectRecent">Add "Recent" Button</label>
+    <label class="switch">
+      <input type="checkbox" id="injectRecent" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="toggle-group">
+    <label for="highlightContinue">Highlight "이어보기"</label>
+    <label class="switch">
+      <input type="checkbox" id="highlightContinue" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="toggle-group">
+    <label for="highlightTicket">Ticket Warning</label>
+    <label class="switch">
+      <input type="checkbox" id="highlightTicket" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+<!--div><a href="minjae1218.kim@gmail.com">report issues / request features</a></div-->
+</html>
