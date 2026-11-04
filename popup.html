@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <style>
     :root{
-      --primary-color: #fee500;/*#ff4757(red),#fee500(yellow)*/
+      --primary-color: #FFCD00;/*#ff4757(highlight red),#fee500(kakao yellow), #FFCD00(warm kakao gold)*/
     }
     body {
       width: 230px;
@@ -64,13 +64,16 @@
     input:checked + .slider:before {
       transform: translateX(14px);
     }
+    #contact{
+      color:#ffffff;
+    }
   </style>
 </head>
 <body>
   <h3>Kakaopage Enhanced</h3>
   
   <div class="toggle-group">
-    <label for="hideAds">Hide Ads & Promos</label>
+    <label for="hideAds">광고 및 프로모션 숨기기</label>
     <label class="switch">
       <input type="checkbox" id="hideAds" checked>
       <span class="slider"></span>
@@ -78,7 +81,7 @@
   </div>
 
   <div class="toggle-group">
-    <label for="injectRecent">Add "Recent" Button</label>
+    <label for="injectRecent" title="최근본">"최근본" 버튼 추가</label>
     <label class="switch">
       <input type="checkbox" id="injectRecent" checked>
       <span class="slider"></span>
@@ -86,7 +89,7 @@
   </div>
 
   <div class="toggle-group">
-    <label for="highlightContinue">Highlight "이어보기"</label>
+    <label for="highlightContinue">"이어보기" 하이라이트</label>
     <label class="switch">
       <input type="checkbox" id="highlightContinue" checked>
       <span class="slider"></span>
@@ -94,14 +97,15 @@
   </div>
 
   <div class="toggle-group">
-    <label for="highlightTicket">Ticket Warning</label>
+    <label for="highlightTicket">유료 이용권 주의</label>
     <label class="switch">
       <input type="checkbox" id="highlightTicket" checked>
       <span class="slider"></span>
     </label>
   </div>
 
+  <div><a href="https://github.com/minjaekim1218/KakaoPage-Enhanced" id="contact" target="_blank">report issues / request features</a></div>
+
   <script src="popup.js"></script>
 </body>
-<!--div><a href="minjae1218.kim@gmail.com">report issues / request features</a></div-->
 </html>
